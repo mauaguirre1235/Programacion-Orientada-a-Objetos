@@ -4,23 +4,16 @@ include 'includes/header.php';
 
 // Definir una clase Producto
 class Producto {
-    // Propiedades
-    public $nombre;
-    public $precio;
-    public $disponible;
     
-    // Constructor
-    public function __construct( string $nombre, int $precio, bool $disponible) 
+    // Constructor para inicializar las propiedades de la clase
+    public function __construct( public string $nombre, public int $precio,public bool $disponible) 
     {
-        // Asignar los valores a las propiedades
-        $this->nombre = $nombre; 
-        $this->precio = $precio;
-        $this->disponible = $disponible; 
+     
     }
 }
 
 // Crear una instancia de la clase Producto
-$producto = new Producto('Televisor', 500, true);
+$producto = new Producto('Televisor curvo', 500, true);
 
 
 echo '<pre>';
