@@ -1,6 +1,6 @@
 <?php include 'includes/header.php';
 
-// Herencia 
+// Clase abstracta 
 
 abstract class Transporte {
     
