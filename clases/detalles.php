@@ -1,8 +1,9 @@
 <?php
 
+namespace App;  
 class Detalles {
     public function __construct()
     {
-        echo "Detalles de la clase Detalles.php";    
+        echo "Desde la clase Detalles.php";    
     }
 }

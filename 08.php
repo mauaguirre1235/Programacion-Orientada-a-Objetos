@@ -1,18 +1,30 @@
 <?php include 'includes/header.php';
 
-// Incluir las otras clases 
+// // Incluir las otras clases 
 
-// require 'clases/clientes.php';
-// require 'clases/detalles.php';
+
+// require 'clases/Clientes.php';  
+
+// require 'clases/Detalles.php';  
+
+use App\Clientes;
+use App\Detalles;
 
 function mi_autoload($clase){
-    echo $clase;
-    require __DIR__ . '/clases/' . $clase . '.php';
+  
+    $parte = explode('\\', $clase); 
+     
+
+  
+     require __DIR__ . '/clases/' . $parte[1] . '.php';
     
 }
 spl_autoload_register('mi_autoload');
 
-$detalles = new Detalles();
-$clientes = new Clientes(); 
+
+
+$detalles = new App\Detalles();
+$clientes = new App\Clientes(); 
+$clientes2 = new Clientes();
 
 include 'includes/footer.php';

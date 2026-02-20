@@ -1,6 +1,7 @@
 <?php include 'includes/header.php';
 
-// Interfaz para definir el contrato de transporte
+// Polimorfismo: Es la capacidad de un objeto de tomar muchas formas. En PHP, esto se logra a través de interfaces y clases abstractas.
+// Permite que una clase implemente múltiples interfaces o herede de una clase abstracta, lo que facilita la reutilización del código y la flexibilidad en el diseño de software.
 
 interface TransporteInterfaz {
 
