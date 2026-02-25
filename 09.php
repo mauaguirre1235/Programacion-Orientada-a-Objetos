@@ -1,5 +1,7 @@
 <?php include 'includes/header.php';
 
+// sentencias preparadas con mysqli 
+
 // Conectar a la BD con MYSAQLI
 $db = new mysqli ('localhost','root','root','bienesraices_crud');  
 
@@ -15,8 +17,6 @@ $stmt->execute();
 
 // creamos una variable para guardar el resultado
 $stmt->bind_result($titulo, $imagen);    
-
-// asignamos el resultado 
 
 
 // imprimir el resultado    
